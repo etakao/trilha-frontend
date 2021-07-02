@@ -1,0 +1,58 @@
+.home-container section {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.logo p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-container span {
+  font-size: 1.2rem;
+}
+
+.search-container input {
+  background: none;
+  line-height: 2rem;
+  color: var(--text);
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
