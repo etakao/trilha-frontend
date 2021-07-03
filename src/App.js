@@ -1,14 +1,13 @@
 import React from 'react';
-import './styles/global.css';
 
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Routes from './routes';
+
+import 'antd/dist/antd.css';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Home />
+      <Routes />
     </div>
   );
 }

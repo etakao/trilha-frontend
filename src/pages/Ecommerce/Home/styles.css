@@ -15,13 +15,13 @@
 }
 
 .logo p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   margin-bottom: 0;
 }
 
 .logo span {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 2.2rem;
   font-weight: 600;
 }
@@ -33,17 +33,17 @@
 }
 
 .search-container span {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .search-container input {
   background: none;
-  line-height: 2rem;
+  line-height: 1.2rem;
   color: var(--text);
   border: none;
   border-bottom: 1px solid var(--border);
   padding: 0.4rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .search-container input:focus {

@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body, input, textarea, button {
-  font: 500 1.6rem KoHo, sans-serif;
+  font: 500 1rem KoHo, sans-serif;
   color: var(--text);
 }
 

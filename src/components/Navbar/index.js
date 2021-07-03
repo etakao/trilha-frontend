@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { FiShoppingBag, FiShoppingCart, FiUser } from 'react-icons/fi';
 
@@ -7,15 +8,15 @@ import './styles.css';
 function Navbar() {
   return (
     <div className="navbar-container">
-      <div className="menu-item">
+      <NavLink to="/" className="menu-item">
         <FiShoppingBag /> Produtos
-      </div>
-      <div className="menu-item">
+      </NavLink>
+      <a href="/login" className="menu-item">
         <FiUser /> Entrar
-      </div>
-      <div className="menu-item">
+      </a>
+      <NavLink to="/cart" className="menu-item">
         <FiShoppingCart /> Carrinho
-      </div>
+      </NavLink>
     </div>
   );
 }

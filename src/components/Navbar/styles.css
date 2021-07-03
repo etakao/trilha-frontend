@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.navbar-container a {
+  text-decoration: none;
+}
+
 .menu-item {
   cursor: pointer;
   position: relative;
@@ -16,6 +20,13 @@
   padding: 0.6rem;
   border-radius: 0.4rem;
   color: var(--text);
+
+  transition: all 0.2s;
+}
+
+.menu-item:hover {
+  color: var(--text);
+  text-decoration: underline;
 }
 
 .menu-item:last-child {
