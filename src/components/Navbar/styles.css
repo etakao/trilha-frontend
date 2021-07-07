@@ -37,3 +37,10 @@
   font-size: 1.6rem;
   margin-right: 1rem;
 }
+
+.menu-item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.8rem;
+}
