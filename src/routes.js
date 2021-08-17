@@ -6,12 +6,14 @@ import Register from './pages/Register';
 import Ecommerce from './pages/Ecommerce';
 import Home from './pages/Ecommerce/Home';
 import Cart from './pages/Ecommerce/Cart';
+import Profile from './pages/Ecommerce/Profile';
 
 export const EcommerceRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/cart" component={Cart} />
+      <Route path="/profile" component={Profile} />
     </Switch>
   );
 }

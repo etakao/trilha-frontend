@@ -1,12 +1,17 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
 
 import './styles.css';
 
-function Input({ title, id, ...rest }) {
+function Input({ title, id, masked, ...rest }) {
   return (
     <div className="input-container">
       <label htmlFor={id}>{title}</label>
-      <input id={id} {...rest} />
+      {masked ? (
+        <NumberFormat id={id} {...rest} />
+      ) : (
+        <input id={id} {...rest} />
+      )}
     </div>
   );
 }

@@ -3,12 +3,15 @@ import React from 'react';
 import Routes from './routes';
 
 import 'antd/dist/antd.css';
+import { UserContextProvider } from './contexts/User';
 
 function App() {
   return (
-    <div>
-      <Routes />
-    </div>
+    <UserContextProvider>
+      <div>
+        <Routes />
+      </div>
+    </UserContextProvider>
   );
 }
 
