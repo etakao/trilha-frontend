@@ -36,7 +36,13 @@ function Login() {
         login(response.data.token);
         setUser(response.data.user);
         message.destroy("logging");
-        history.push("/");
+
+        if (response.data.user.is_admin === 1) {
+          history.push("/dashboard");
+        } else {
+          history.push("/");
+        }
+
         message.success(`Bem-vindo, ${response.data.user.name} :)`)
       }
     } catch (error) {
@@ -55,7 +61,7 @@ function Login() {
       <form onSubmit={handleSubmit}>
         <Input
           title="Email"
-          type="email"
+          type="text"
           id="email"
           masked={false}
           onChange={(e) => setEmail(e.target.value)}
